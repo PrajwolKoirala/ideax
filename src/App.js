@@ -5,7 +5,6 @@ import SignupSchool from './pages/SignupSchool';
 import SignupTeacher from './pages/SignupTeacher';
 import Login from './pages/Login';
 import {
-
   Routes,
   Route
 } from 'react-router-dom'
@@ -16,6 +15,12 @@ import PostClassForm from './pages/PostClassForm';
 import AvailableClasses from './pages/AvailableClasses';
 import ApplyForClass from './pages/ApplyForClass';
 import { useState } from 'react';
+import Home from './pages/Home';
+import ShowPost from './pages/ShowPost';
+import PlayGames from './pages/PlayGames';
+import Quiz from './pages/Quiz';
+import Quiz1 from './pages/Quiz1';
+import PostSomething from './pages/PostSomething';
 function App() {
   const [classId, setclassId] = useState('')
   return (
@@ -23,9 +28,17 @@ function App() {
       <Navbar1/>
       <div className='container'>
       <Routes>
+      <Route path='/' element = {  <Home/>}/>      
+
         <Route path='signuplearner' element = {  <SignupLearner/>}/>
         <Route path='availableclasses' element = {  <AvailableClasses/>}/>      
         <Route path="/applyclass/:id" element={<ApplyForClass classId={classId}/>} />
+        <Route path ="post/:id" element = {<ShowPost/>}/>
+        <Route path ="postsomething" element = {<PostSomething/>}/>
+
+        <Route path ="playgames" element = {<PlayGames/>}/>
+        <Route path ="/quiz" element = {<Quiz/>}/>
+        <Route path ="/quiz1" element = {<Quiz1/>}/>
 
         <Route path='login' element = {  <Login/>}/>
 

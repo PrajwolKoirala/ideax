@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { setUser } from '../redux/slice/UserSlice'
 import { useDispatch } from 'react-redux'
+import download from "../assets/images/girlsx.jpg";
+
 export default function Login() {
   const dispatch = useDispatch()
 
@@ -69,7 +71,7 @@ export default function Login() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label">Email address</label>
           <input
@@ -97,7 +99,101 @@ export default function Login() {
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-      </form>
+      </form> */}
+
+<>
+  {
+    error
+    &&
+    <div class="alert alert-danger" role="alert">
+      {error}
+</div>
+
+  }
+
+    <div>
+      <div className="container">
+        <div className="row m-5 no-gutters shadow-lg">
+          <div className="col-md-6 d-none d-md-block">
+            <img
+              src={download}
+              className="img-fluid"
+              style={{ minHeight: "100%" }}
+              alt="Login Background"
+            />
+          </div>
+          <div className="col-md-6 bg-white p-5">
+            <h3 className="pb-3">Login Form</h3>
+            <div className="form-style">
+              <form onSubmit={handleSubmit}>
+                <div className="form-group pb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Enter email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    name="email"
+                    required
+                  />
+                </div>
+                <div className="form-group pb-3">
+                  <input
+                     type="password"
+                     className="form-control"
+                     placeholder="Password"
+                     value={formData.password}
+                     onChange={handleChange}
+                     name="password"
+                     required
+                  />
+                </div>
+                <div className="d-flex align-items-center justify-content-between">
+                  <div className="d-flex align-items-center">
+                    <input name="" type="checkbox" value="" />
+                    <span className="pl-2 font-weight-bold">Remember Me</span>
+                  </div>
+                  
+                </div>
+                <div className="pb-2">
+                  <button
+                    type="submit"
+                    className="btn btn-dark w-100 font-weight-bold mt-2"
+                    style={{
+                      width: "100%",
+                      fontWeight: "bold",
+                      marginTop: "2em",
+                    }}
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <div className="sideline">OR</div>
+              <div>
+                {/* <button
+                  type="submit"
+                  className="btn btn-primary w-100 font-weight-bold mt-2"
+                >
+                  <i className="fa fa-facebook" aria-hidden="true"></i> Login With Facebook
+                </button> */}
+              </div>
+              <div className="pt-4 text-center">
+                Get Members Benefit.
+                <Link
+                  // className="nav-link active"
+                  aria-current="page"
+                  to="signup"
+                >
+                  Signup
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
     </div>
   );
 }

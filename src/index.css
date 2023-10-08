@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #dbe3ea;
 }
 
 code {
@@ -14,4 +15,836 @@ code {
 .link{
   text-decoration: none;
   color: white;
+}
+.post-heading{
+  margin-top: 60px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drop-down
+.card {
+  max-width: 600px; /* Adjust this value as per your design */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+.card-body{
+  background-color: #c8d8ea;
+}
+
+
+
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 10px 10px 10px  #4a84c3;
+  /* font-weight: 400; */
+  max-width: 800px;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.post-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.post-form {
+  margin-bottom: 20px;
+}
+
+.post-input,
+.post-file-input,
+.post-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+ /* .post-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+.post-button:hover {
+  background-color: #0056b3;
+}
+
+  .post {
+  margin: 20px 0;
+} 
+
+.post-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+ 
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  /* padding: 20px; */
+  margin-bottom: 20px;
+  width: 800px;
+  background-color: #fff;
+  margin-left: 235px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.post-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+.post-card h6{
+  text-decoration: underline;
+}
+.post-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate-button,
+.report-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.rate-button:hover,
+.report-button:hover {
+  background-color: #0056b3;
+}
+/* Add this to your CSS file */
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-input, .post-textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.post-file-input {
+  margin-bottom: 10px;
+}
+
+.post-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: skyblue;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 350px;
+}
+
+.post-button:hover {
+  background-color: #0056b3;
+}
+
+.post-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.post-card h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.post-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  margin-right: 10px;
+}
+
+/* .report-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.report-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.report-card select, .report-card button {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.report-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.report-card button:hover {
+  background-color: #0056b3;
+} */
+/* Add this to your CSS file */
+
+.report-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.report-card select, .report-card button {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.report-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.report-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Add a close button if needed */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+:root {
+  --primary-color: skyblue;
+  --btn-color-hover: #732474;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* Reset some default styles for better cross-browser consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font size and font family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Style the hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  text-wrap: balance;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.logo{
+  width: 100rem;
+}
+.hero button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #555;
+}
+
+/* Style the about section */
+.about {
+  margin-bottom: 50px;
+}
+
+.about h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.2em;
+}
+
+/* Style the "How You Can Help" section */
+.how-to-help {
+  margin-bottom: 50px;
+}
+
+.how-to-help h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.help-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+element.style {
+}
+.help-card {
+  flex: 1 1;
+  background-color: #cbdbed;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+}
+
+.help-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.help-card p {
+  font-size: 1em;
+}
+
+/* Style the testimonial section */
+.testimonial {
+  margin-bottom: 50px;
+}
+
+.testimonial h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.testimonial-card {
+  /* background-color: skyblue; */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial-card p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .author {
+  font-style: italic;
+  font-size: 1em;
+}
+
+/* Style the contact section */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.container button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: skyblue;
+  color: #111;
+  border: none;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #6195e7;
+}
+
+footer {
+  background-color: rgb(174, 184, 194);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 100%;
+}
+.text-dark{
+  width: 100%;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+}
+
+footer li {
+  list-style: none;
+  width: fit-content;
+  border-radius: 50%;
+  /* padding: 5px; */
+  /* font-size: 1.2em; */
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  /* color: #111; */
+}
+
+footer li:hover {
+  background-color: #732474;
+}
+
+.btn-secondary {
+  --bs-btn-color: #111;
+  --bs-btn-bg: skyblue;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #732474;
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+  border: 0px;
+}
+.hero button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: skyblue;
+  color: #111;
+  border: none;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #732474;
+}
+
+.btn-dark {
+  border: none;
+  background-color: skyblue;
+  color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #732474;
+  /* color: #111; */
+}
+footer li {
+  transition: all 0.5s ease-in-out;
+}
+/* Add this to your CSS file */
+.card {
+  /* border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  border: 10px solid #d2e1ef;
+  box-shadow: 10px 10px 10px #4a84c3;
+  width: 500px !important;
+  max-height: -moz-fit-content !important;
+  max-height: fit-content !important;
+  margin-left: 30%;
+  background-color: #fbfbfb00;
+}
+  
+
+
+.card-title {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.card img{
+  height: 200px;
+  object-fit: cover;
+}
+.card {
+  width: 500px !important;
+  max-height: fit-content !important;
+  margin-left: 30%;
+  background-color: rgb(27, 201, 96);
+}
+
+.card-title{
+  text-decoration: none;
+}
+.noline {
+  color: rgb(22, 23, 22);
+  text-decoration: none !important;
+}
+.nav-link{
+  text-decoration: none !important;
+
+}
+footer {
+  background-color: rgb(174, 184, 194);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row/; */
+}
+
+footer .follow {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+}
+
+footer li {
+  list-style: none;
+  width: fit-content;
+  border-radius: 50%;
+  /* padding: 5px; */
+  /* font-size: 1.2em; */
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  /* color: #111; */
+}
+
+footer li {
+  transition: all 0.5s ease-in-out;
+}
+
+footer li:hover {
+  /* background-color: #732474; */
+  transform: scale(1.2);
+}
+.btn1{
+  background-color: greenyellow;
+}
+
+.help-card p span {
+  display: inline-block;
+  font-size: 1.75rem;
+  color: #d50808;
+  transition: all 0.5s ease-in-out;
+}
+
+.help-card p span:hover {
+  transform: scale(1.2);
+}
+
+.scholor_img{
+  border-radius: 0 50px;
+}
+/* donationFormStyles.css */
+
+.donation-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.donation-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donation-submit:hover {
+  background-color: #0056b3;
+}
+
+.donation-alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.donation-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.donation-error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+.donation-form-container {
+  text-align: center;
+}
+
+.donation-form {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.donation-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.donation-form input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.donation-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.donation-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.donation-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form-title {
+  text-align: center;
+}
+
+.school-name {
+  font-weight: bold;
+}
+
+.donation-form {
+  margin-top: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.card {
+  width: 500px !important;
+  max-height: -moz-fit-content !important;
+  max-height: fit-content !important;
+  margin-left: 30%;
+  background-color: #8455a7;
+}
+
+.nav-link{
+  padding-right: 800px;
+  /* display: flex; */
+  justify-content: space-between;
+  margin-left: 1200px;
+}
+.d-flex{
+  margin-left: 500px;
+  position: absolute;
+  width: 200px;
 }

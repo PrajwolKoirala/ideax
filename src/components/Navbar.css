@@ -1,0 +1,116 @@
+/* Add your CSS styles to a .css file, e.g., styles.css */
+
+.nav-bar {
+    background-color: #4b3fb3;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .about {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+  
+  button {
+    background-color: #42a376;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for the "Profile" button (with the .profile-button class) */
+  button.profile-button {
+    background-color: #ff5722;
+  }
+  
+  /* Styles for the dropdown menu */
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-options {
+    margin-top: 1px;
+    color: blue;
+    display: none;
+    position: absolute;
+    overflow: auto;
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+    
+  }
+  
+  .drop{
+    margin-bottom: 5px;
+  }
+  /* Custom CSS */
+.navbar-right-align {
+  margin-left: auto;
+}
+
+/* Apply Bootstrap utility classes */
+.dropdown-toggle,
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.dropdown-toggle:focus,
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  background-color: #008cba;
+  border: none;
+}
+
+.dropdown-item {
+  font-size: 1rem;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #007a8d;
+}
+
+/* Apply custom styling to adjust margin and padding */
+.dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.drop{
+  
+}
